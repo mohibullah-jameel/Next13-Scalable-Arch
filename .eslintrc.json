@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["eslint:recommended", "next", "next/core-web-vitals"],
+  "globals": {
+    "React": "readonly"
+  },
+  "rules": {
+    // if you want to disable some rules, write them here
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+  }
 }
