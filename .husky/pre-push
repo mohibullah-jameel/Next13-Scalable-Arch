@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+
+# will run yarn build before pushing to git repo. installed using command "npx husky add .husky/pre-push "yarn build"" 
+yarn build 
